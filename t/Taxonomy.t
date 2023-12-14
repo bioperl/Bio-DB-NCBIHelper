@@ -164,8 +164,8 @@ if (defined $ENV{BIOPERLEMAIL}) {
     # 'Chlorella vulgaris'   | 3077          | 3077
     # 'Phygadeuon solidus'   | 1763951       | 1763951
     # 'Ovatus'               | 666060        | 666060
-    # 'Phygadeuon ovatus'    | "No hit"      | 666060
-    # 'Trimorus ovatus'      | "No hit"      | 666060
+    # 'Phygadeuon ovatus'    | 2890685       | 2890685
+    # 'Zaphod Beeblebrox'    | "No hit"      | "No hit"
 
     my @ids;
     @ids = $db->get_taxonids('Lissotriton vulgaris');
@@ -177,8 +177,8 @@ if (defined $ENV{BIOPERLEMAIL}) {
     @ids = $db->get_taxonids('Ovatus');
     is $ids[0], 666060, 'Correct: Ovatus';
     @ids = $db->get_taxonids('Phygadeuon ovatus');
-    is $ids[0], 'No hit', 'Correct: No hit';
-    @ids = $db->get_taxonids('Trimorus ovatus');
+    is $ids[0], '2890685', 'Correct: 2890685';
+    @ids = $db->get_taxonids('Zaphod Beeblebrox');
     is $ids[0], 'No hit', 'Correct: No hit';
 }
 
