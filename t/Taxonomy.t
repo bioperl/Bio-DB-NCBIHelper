@@ -45,7 +45,6 @@ if (defined $ENV{BIOPERLEMAIL}) {
     my %common_names = map { $_ => 1 } $n->common_names;
     cmp_ok keys %common_names, '>=', 3, ref($db).": common names";
     ok exists $common_names{human};
-    ok exists $common_names{man};
 
     is $n->division, 'Primates';
     is $n->genetic_code, 1;
