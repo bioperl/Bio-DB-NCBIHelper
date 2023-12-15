@@ -2,6 +2,8 @@ Summary of important user-visible changes for Bio-DB-NCBIHelper
 ---------------------------------------------------------------
 
 {{$NEXT}}
+
+1.7.8     2023-12-14 22:22:13-06:00 America/Chicago
   * Fix a series of failing tests caused by changes to the data on the
     NCBI databases.
 
